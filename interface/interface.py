@@ -17,7 +17,7 @@ def login():
             database="Star Trek",
             user= username,
             password= password,
-            host="192.168.40.20,
+            host="192.168.40.20",
             port="5432"
         )
         return(db)
@@ -39,7 +39,7 @@ def query_execute_read_basic(query):
     database="Star Trek",
     user= "ensign",
     password= "star",
-    host="176.27.39.225",
+    host="192.168.40.20",
     port="5432"
     )
     cursor = db.cursor()
