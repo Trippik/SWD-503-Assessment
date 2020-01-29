@@ -78,18 +78,19 @@ class simulator():
                     
                         if (combine > 2):
                             print("x: " + str(counterx) + " y: " + str(countery) + " IT'S LIFE JIM")
+                            grid.xs(countery)[counterx] = 1
                         else:
                             print("x: " + str(counterx) + " y: " + str(countery) + " :(")
                     counterx = counterx + 1
-            else:
-                countery = countery + 1
-                counterx = 0
-        else:
-            print()
-            print()
+                else:
+                    countery = countery + 1
+                    counterx = 0
             print("Grid state at the end of cycle " + str(cycle_counter))
             print()
             print(grid)
+            cycle_counter = cycle_counter + 1
+        else:
+            pass
 
 
     def run (self):
